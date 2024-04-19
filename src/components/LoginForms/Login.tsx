@@ -37,7 +37,7 @@ export default function Login() {
         <FormButton />
       </form>
 
-      <Link className={styles.perdeu} href="/login/perdeu">
+      <Link className={styles.perdeu} href="/login/esqueceu">
         Esqueceu a senha?
       </Link>
       <div className={styles.cadastro}>
