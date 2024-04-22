@@ -18,8 +18,6 @@ export default async function passwordReset(state: object, formData: FormData) {
       body: formData,
     })
 
-    console.log(response)
-
     if (!response.ok) throw new Error('Não autorizado.')
   } catch (error: unknown) {
     return apiError(error)
