@@ -10,6 +10,8 @@ import EstatisticasIcon from '@/icons/estatisticas-icon'
 import AdicionarIcon from '@/icons/adicionar-icon'
 import SairIcon from '@/icons/sair-icon'
 import MenuItem from './components/menu-item'
+import { useUser } from '@/context/user-context'
+import logout from '@/actions/logout'
 
 function getTitle(pathname: string) {
   switch (pathname) {
@@ -32,7 +34,11 @@ export default function ContaHeader() {
     setMobileMenu(false)
   }, [pathname])
 
-  function handleLogout() {}
+  const { setUser } = useUser()
+  async function handleLogout() {
+    await logout()
+    setUser(null)
+  }
 
   return (
     <header className={styles.header}>
