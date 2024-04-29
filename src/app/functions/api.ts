@@ -37,13 +37,15 @@ export function PHOTO_POST() {
   }
 }
 
-export function PHOTOS_GET({ page, total, user }) {
+type PhotosGetParams = {
+  page: number
+  total: number
+  user: 0 | string
+}
+
+export function PHOTOS_GET({ page, total, user }: PhotosGetParams) {
   return {
     url: `${API_URL}/api/photo/?_page=${page}&_total=${total}&_user=${user}`,
-    options: {
-      method: 'GET',
-      cache: 'no-store',
-    },
   }
 }
 
