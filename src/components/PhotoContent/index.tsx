@@ -6,6 +6,7 @@ import { PhotoData } from '@/actions/photo-get'
 import { useUser } from '@/context/user-context'
 import PhotoDelete from '../PhotoDelete'
 import Link from 'next/link'
+import { PhotoComments } from '../PhotoComments'
 
 type PhotoContentProps = {
   data: PhotoData
@@ -40,7 +41,7 @@ export function PhotoContent({ data, single }: PhotoContentProps) {
           </ul>
         </div>
       </div>
-      {/* <PhotoComments single={single} id={photo.id} comments={comments} /> */}
+      <PhotoComments single={single} id={photo.id} comments={comments} />
     </div>
   )
 }
