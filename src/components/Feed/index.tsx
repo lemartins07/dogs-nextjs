@@ -11,6 +11,7 @@ type FeedType = {
   user?: 0 | string
 }
 
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 export default function Feed({ photos, user }: FeedType) {
   const [photosFeed, setPhotosFeed] = useState<Photo[]>(photos)
   const [page, setPage] = useState(1)

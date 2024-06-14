@@ -38,5 +38,5 @@ export default function EnviarIcon() {
         />
       </g>
     </svg>
-  );
+  )
 }

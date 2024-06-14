@@ -11,5 +11,5 @@ export default function EstatisticasIcon() {
       <rect x="13" y="10" width="2" height="12" rx="1" fill="#333" />
       <rect x="20" y="6" width="2" height="16" rx="1" fill="#333" />
     </svg>
-  );
+  )
 }

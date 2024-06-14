@@ -14,5 +14,5 @@ export default function FeedIcon() {
         fill="#333"
       />
     </svg>
-  );
+  )
 }

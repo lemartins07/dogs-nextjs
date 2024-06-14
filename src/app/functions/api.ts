@@ -1,4 +1,3 @@
-// @ts-nocheck
 export const API_URL = 'https://dogsapi.origamid.dev/json'
 
 export function TOKEN_POST() {
@@ -55,7 +54,7 @@ export function COMMENT_POST(id: string) {
   }
 }
 
-export function PHOTO_DELETE(id) {
+export function PHOTO_DELETE(id: string) {
   return {
     url: `${API_URL}/api/photo/${id}`,
   }

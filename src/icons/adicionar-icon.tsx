@@ -14,5 +14,5 @@ export default function AdicionarIcon() {
         fill="#333"
       />
     </svg>
-  );
+  )
 }
