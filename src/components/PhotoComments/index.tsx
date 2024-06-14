@@ -1,3 +1,5 @@
+'use client'
+
 import { Comment } from '@/actions/photo-get'
 import { useUser } from '@/context/user-context'
 import { useEffect, useRef, useState } from 'react'
